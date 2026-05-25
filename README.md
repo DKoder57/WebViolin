@@ -1,4 +1,4 @@
-text_content = """# 🎻 WebViolin
+# 🎻 *WebViolin*
 
 Real-time violin tuner built with React, TypeScript, and the Web Audio API.
 
