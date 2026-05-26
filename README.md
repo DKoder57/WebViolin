@@ -35,7 +35,7 @@ O sistema permite treinar afinação, comparar frequências sonoras com primeira
 ---
 
 ## 📦 Estrutura do Projeto
-```
+```bash
 webviolin/
  ├── apps/
  │    ├── web/    → FRONT-END (Next.js)
