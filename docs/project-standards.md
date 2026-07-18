@@ -8,8 +8,8 @@ This document defines architectural, coding and collaboration standards adopted 
 
 webviolin/
  ├── apps/
- │    ├── web/ → Front-end (Next.js)
- │    └── api/ → Back-end (Node + Express)
+ │    ├── web/ → Front-end (Vite + React + TypeScript)
+ │    └── api/ → Back-end (Node + Express) — ainda não implementado
  ├── docs/
  ├── .gitignore
  └── README.md
@@ -60,8 +60,8 @@ Authentication:
 # 🌎 Environment Configuration
 
 Development:
-- Frontend: http://localhost:3000
-- Backend: http://localhost:3001
+- Frontend: http://localhost:5173 (padrão do Vite)
+- Backend: http://localhost:3001 (quando implementado)
 
 Production:
 - Environment variables provided by hosting provider
@@ -171,6 +171,13 @@ feat: add tuning validation
 fix: correct ranking calculation  
 docs: update architecture  
 refactor: separate business logic  
+
+---
+
+# 🎨 Styling Standards
+
+- TailwindCSS é o padrão de estilização adotado para o frontend.
+- CSS solto por componente (ex: arquivos `.css` individuais) deve ser migrado para classes utilitárias do Tailwind conforme o componente for revisado.
 
 ---
 
