@@ -8,13 +8,14 @@ O sistema permite treinar afinação, comparar frequências sonoras com primeira
 
 ## 🚀 Tecnologias Utilizadas
 
-### 🖥️ Front-end
-- React.js
+### 🖥️ Front-end (implementado)
+- React
 - TypeScript
-- Next.js
-- Foco em SEO e Estruturação profissional
+- Vite
+- Zustand
+- TailwindCSS (em adoção)
 
-### 🧠 Back-end
+### 🧠 Back-end (roadmap — ainda não implementado)
 - Node.js
 - Express.js
 - PostgreSQL (Banco de dados relacional)
@@ -26,11 +27,17 @@ O sistema permite treinar afinação, comparar frequências sonoras com primeira
 
 ## 🎯 Funcionalidades
 
-- 🎵 Afinador com detecção de frequência em tempo real
-- 🔊 Comparação de áudio das cordas (G, D, A, E)
+### Implementadas
+- 🎵 Afinador com detecção de frequência em tempo real (algoritmo YIN próprio)
+- 🎯 Feedback visual de afinação com precisão em cents
+- 🔊 Detecção das cordas do violino (G, D, A, E)
+- 🎚️ Calibração customizável de A4
+
+### Roadmap
 - 🏆 Sistema de pontuação
 - 📊 Ranking global de usuários
-- 📈 Histórico e acompanhamento de progresso (em desenvolvimento)
+- 📈 Histórico e acompanhamento de progresso
+- 🔐 Autenticação de usuários
 
 ---
 
@@ -38,8 +45,8 @@ O sistema permite treinar afinação, comparar frequências sonoras com primeira
 ```bash
 webviolin/
  ├── apps/
- │    ├── web/    → FRONT-END (Next.js)
- │    └── api/    → BACK-END (Node + Express)
+ │    ├── web/    → FRONT-END (Vite + React + TypeScript)
+ │    └── api/    → BACK-END (Node + Express) — roadmap, ainda não implementado
  ├── docs/
  ├── .gitignore
  ├── README.md
