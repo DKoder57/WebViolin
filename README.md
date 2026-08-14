@@ -1,70 +1,72 @@
 # 🎻 WebViolin
 
-Plataforma web focada em afinação e desenvolvimento técnico para violinistas iniciantes.
+![TypeScript](https://img.shields.io/badge/TypeScript-72.9%25-3178C6?logo=typescript&logoColor=white)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-O sistema permite treinar afinação, comparar frequências sonoras com primeiras notas, acompanhar progresso e competir com outros usuários através de um sistema de pontuação e ranking.
+Plataforma web de afinação e treino técnico para violinistas iniciantes. Detecta a frequência da nota tocada em tempo real, compara com a afinação correta das cordas (G, D, A, E) e acompanha a evolução do usuário através de um sistema de pontuação e ranking global.
+
+**🔗 Demo:** _em breve_
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## ✨ Destaques técnicos
 
-### 🖥️ Front-end (implementado)
-- React
-- TypeScript
-- Vite
-- Zustand
-- TailwindCSS (em adoção)
+- Detecção de pitch em tempo real direto no navegador, via **Web Audio API** — sem backend de processamento de áudio
+- Referência de A4 customizável (afinação em 440Hz, 442Hz etc.)
+- Arquitetura front-end **feature-based**, com estado global via **Zustand**
+- Autenticação segura com **JWT** e senhas com **bcrypt**
+- UI responsiva para desktop e mobile
 
-### 🧠 Back-end (roadmap — ainda não implementado)
-- Node.js
-- Express.js
-- PostgreSQL (Banco de dados relacional)
+## 🚀 Tecnologias utilizadas
+
+### 🖥️ Front-end
+- React.js + TypeScript
+- Next.js (foco em SEO e estruturação profissional)
+- Zustand (state management)
+- Web Audio API (captura e análise de frequência)
+
+### 🧠 Back-end
+- Node.js + Express.js
+- PostgreSQL (banco relacional)
 - Prisma (ORM)
-- bcrypt (Criptografia de senha)
-- JWT (Autenticação)
+- JWT (autenticação) + bcrypt (hash de senha)
 
 ---
 
 ## 🎯 Funcionalidades
 
-### Implementadas
-- 🎵 Afinador com detecção de frequência em tempo real (algoritmo YIN próprio)
-- 🎯 Feedback visual de afinação com precisão em cents
-- 🔊 Detecção das cordas do violino (G, D, A, E)
-- 🎚️ Calibração customizável de A4
-
-### Roadmap
-- 🏆 Sistema de pontuação
-- 📊 Ranking global de usuários
-- 📈 Histórico e acompanhamento de progresso
-- 🔐 Autenticação de usuários
+- 🎵 Afinador com detecção de frequência em tempo real
+- 🔊 Comparação de áudio das cordas (G, D, A, E)
+- 🎚️ Referência de A4 customizável
+- 🏆 Sistema de pontuação e ranking global
+- 📈 Histórico de progresso *(em desenvolvimento)*
 
 ---
 
-## 📦 Estrutura do Projeto
-```bash
+## 📦 Estrutura do projeto
+
 webviolin/
- ├── apps/
- │    ├── web/    → FRONT-END (Vite + React + TypeScript)
- │    └── api/    → BACK-END (Node + Express) — roadmap, ainda não implementado
- ├── docs/
- ├── .gitignore
- ├── README.md
- ```
+├── apps/
+│ ├── web/ → FRONT-END (Next.js)
+│ └── api/ → BACK-END (Node + Express)
+├── docs/
+├── .gitignore
+├── README.md
+
 ---
 
-## ⚙️ Objetivo do Projeto
+## ⚙️ Objetivo do projeto
 
-Desenvolver uma aplicação completa full-stack com foco em:
+Construir uma aplicação full-stack completa com foco em:
 
-- Arquitetura profissional
-- Organização de código
-- Integração entre front-end e back-end
+- Arquitetura profissional e código organizado
+- Integração real entre front-end e back-end
+- Processamento de áudio no navegador (sem libs externas de DSP)
 - Sistema de pontuação com banco relacional
-- Processamento de áudio no navegador
 
 ---
 
 ## 📌 Status
 
-🚧 Em desenvolvimento
+🚧 Em desenvolvimento.
