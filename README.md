@@ -45,7 +45,7 @@ Plataforma web de afinação e treino técnico para violinistas iniciantes. Dete
 ---
 
 ## 📦 Estrutura do projeto
-
+```
 webviolin/
 ├── apps/
 │ ├── web/ → FRONT-END (Next.js)
@@ -53,7 +53,7 @@ webviolin/
 ├── docs/
 ├── .gitignore
 ├── README.md
-
+```
 ---
 
 ## ⚙️ Objetivo do projeto
