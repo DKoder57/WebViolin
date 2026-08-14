@@ -5,7 +5,7 @@ This document defines architectural, coding and collaboration standards adopted 
 ---
 
 # 📁 Project Structure
-
+```
 webviolin/
  ├── apps/
  │    ├── web/ → Front-end (Vite + React + TypeScript)
@@ -13,7 +13,7 @@ webviolin/
  ├── docs/
  ├── .gitignore
  └── README.md
-
+```
 Each application inside `/apps` is independent and contains its own:
 
 - package.json
