@@ -15,7 +15,7 @@ Plataforma web de afinação e treino técnico para violinistas iniciantes. Dete
 - Detecção de pitch em tempo real direto no navegador, via **Web Audio API** — sem backend de processamento de áudio
 - Referência de A4 customizável (afinação em 440Hz, 442Hz etc.)
 - Arquitetura front-end **feature-based**, com estado global via **Zustand**
-- Autenticação segura com **JWT** e senhas com **bcrypt**
+- Autenticação segura com **JWT** e senhas com **bcrypt**  ```/ A ser implementado```
 - UI responsiva para desktop e mobile
 
 ## 🚀 Tecnologias utilizadas
